@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <script>
+        function checkCredentials(userId, password) {
+            if (userId === 'admin' && password === 'secret') {
+                document.write('Welcome admin!');
+            } else {
+                document.write('BAD LOGIN CREDENTIALS');
+            }
+        }
+
+        checkCredentials(prompt('Enter username:'), prompt('Enter password:'));
+    </script>
+</body>
+</html>
